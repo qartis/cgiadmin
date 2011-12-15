@@ -1,0 +1,18 @@
+void html_form_begin(const char *method, const char *action);
+__attribute__((format(printf,2,3))) void html_input_text(const char *name, const char *fmt, ...);
+void html_input_submit(const char *str);
+__attribute__((format(printf,2,3))) void html_input_hidden(const char *name, const char *fmt, ...);
+__attribute__((format(printf,1,2))) void html_img_thumb(const char *fmt, ...);
+void html_input_file(const char *name);
+__attribute__((format(printf,2,3))) void html_input_textarea(const char *name, const char *fmt, ...);
+void html_input_submit_confirm(const char *text, const char *msg);
+void html_form_end(void);
+void html_h2(const char *str);
+void html_h1(const char *str);
+void html_br(void);
+void html_ul_begin(void);
+void html_ul_end(void);
+void html_li(void);
+__attribute__((format(printf,1,2))) void html_img(const char *fmt, ...);
+__attribute__((format(printf,1,2))) void html_a_begin(const char *fmt, ...);
+void html_a_end(void);
